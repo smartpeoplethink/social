@@ -1,0 +1,5 @@
+SECRET_KEY.txt
+connectionstring.txt
+/venv
+/.vscode
+/__pycache__

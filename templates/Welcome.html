@@ -1,0 +1,22 @@
+{%extends "index.html"%} 
+{%block title%} 
+Update
+{%endblock%} 
+{%block body%}
+<div class = "container">
+    <image src = "{{url_for('static', filename = 'images/Logo2.png')}}" width = 500 height = 207></image>
+    <h1>
+        Welcome,
+        Plugged in is the best tool to stay up to date!
+    </h1>
+    <a class = "btn btn-dark" href = "/login/">
+        Login
+    </a>
+    <a class = "btn btn-dark" href = "/registration/">
+        Register
+    </a>
+    <a class = "btn btn-dark" href = "/home/">
+        Home
+    </a>
+</div> 
+{%endblock%}

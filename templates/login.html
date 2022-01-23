@@ -1,0 +1,25 @@
+{%extends 'index.html'%}
+{%block title%}
+Registration
+{%endblock%}
+{%block body%}
+<form method = "POST">
+    <image src = "{{url_for('static', filename = 'images/Logo2.png')}}" width = 500 height = 207></image>
+    <div>
+        <label>
+            Email
+        </label>
+        <input type = "text" name = "email" class = "form-control" placeholder = "email...">
+        <label>
+            Password
+        </label>
+        <input type = "password" name = "password" class = "form-control" placeholder = "password...">
+    </div>
+    <button type = "submit" class = "btn btn-dark">
+        Submit
+    </button>
+    <a class = "btn btn-dark" href = "/registration/">
+        New account?
+    </a>
+</form>
+{%endblock%}

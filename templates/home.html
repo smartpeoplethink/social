@@ -1,0 +1,21 @@
+{%extends 'index.html'%}
+{%block title%} 
+Home
+{%endblock%} 
+{%block body%} 
+<div class = "container m-0 text-center">
+    <image src = "{{url_for('static', filename = 'images/Logo2.png')}}" width = 500 height = 207></image>
+    <p class = "m-5 fs-1">
+        Home
+    </p>
+    <a class = "position-absolute top-0 start-0" href = "/account/">
+        <image src = "{{url_for('static', filename = 'images/user.png')}}" width = 50 height = 50></image>
+    </a>
+    <a class = "btn btn-dark" href = "/myposts/">
+        My Posts
+    </a>
+    <a class = "btn btn-dark" href = "/othersposts/">
+        All Posts
+    </a>
+</div>
+{%endblock%}

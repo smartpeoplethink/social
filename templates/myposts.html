@@ -1,0 +1,31 @@
+{%extends "index.html"%}
+{%block title%}
+Posts
+{%endblock%}
+{%block body%}
+<div class="container">
+    <form method="POST">
+        <div class="card m-0 p-0 text-center mb-2" style="left: 5%; width: 90%;">
+            <div class="card-body">
+                <h1 class="card-title">New</h5>
+                <input name = "post">
+                <button type="submit" class="btn btn-dark">
+                    Post
+                </button>
+            </div>
+        </div>
+    </form>
+    {%for post in posts|reverse%}
+    <div class="card m-0 p-0 mb-2" style="left: 10%; width: 80%;">
+        <div class="card-body">
+            <h5 class="card-title">Posted by: {{post["by"]}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{moment(post["time"]).fromNow(refresh = True)}}</h6>
+            <p class="card-text">{{post["post"]}}</p>
+        </div>
+    </div>
+    {%endfor%}
+    <a class = "btn btn-dark" href = "/home/">
+        Home
+    </a>
+</div>
+{%endblock%}
