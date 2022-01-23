@@ -1,4 +1,6 @@
 Flask
+datetime
+flask_moment
 flask-pymongo
 dnspython
 passlib
